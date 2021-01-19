@@ -67,8 +67,8 @@ const Home: React.FC = () => {
     <Page>
       <Hero>
         <div>
-          <Title as="h1">{TranslateString(576, 'PancakeSwap')}</Title>
-          <Subtitle>{TranslateString(578, 'The #1 AMM and yield farm on Binance Smart Chain.')}</Subtitle>
+          <Title as="h1">{TranslateString(576, 'PandaYield')}</Title>
+          <Subtitle>{TranslateString(578, 'The most loved yield farm on Binance Smart Chain.')}</Subtitle>
         </div>
       </Hero>
       <Container>
