@@ -12,11 +12,11 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'Exchange',
-        href: 'https://exchange.pancakeswap.finance',
+        href: 'https://spaceswap-dex.netlify.app',
       },
       {
         label: 'Liquidity',
-        href: 'https://exchange.pancakeswap.finance/#/pool',
+        href: 'https://spaceswap-dex.netlify.app/#/pool',
       },
     ],
   },
@@ -30,7 +30,7 @@ const config: MenuEntry[] = [
     icon: 'PoolIcon',
     href: '/pools',
   },
-  {
+  /* {
     label: 'Lottery',
     icon: 'TicketIcon',
     href: '/lottery',
@@ -39,8 +39,8 @@ const config: MenuEntry[] = [
     label: 'NFT',
     icon: 'NftIcon',
     href: '/nft',
-  },
-  {
+  }, */
+  /* {
     label: 'Info',
     icon: 'InfoIcon',
     items: [
@@ -61,13 +61,13 @@ const config: MenuEntry[] = [
         href: 'https://pancakeswap.info/accounts',
       },
     ],
-  },
-  {
+  }, */
+  /* {
     label: 'IFO',
     icon: 'IfoIcon',
     href: '/ifo',
-  },
-  {
+  }, */
+  /* {
     label: 'More',
     icon: 'MoreIcon',
     items: [
@@ -88,7 +88,7 @@ const config: MenuEntry[] = [
         href: 'https://pancakeswap.medium.com',
       },
     ],
-  },
+  }, */
 ]
 
 export default config

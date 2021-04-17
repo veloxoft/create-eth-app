@@ -10,7 +10,7 @@ import CakeStats from './components/CakeStats'
 
 const Hero = styled.div`
   align-items: center;
-  background-image: url('/images/pan-bg-mobile.svg');
+  /*background-image: url('/images/pan-bg-mobile.svg');*/
   background-repeat: no-repeat;
   background-position: top center;
   display: flex;
@@ -21,7 +21,7 @@ const Hero = styled.div`
   text-align: center;
 
   ${({ theme }) => theme.mediaQueries.lg} {
-    background-image: url('/images/pan-bg2.svg'), url('/images/pan-bg.svg');
+    /*background-image: url('/images/pan-bg2.svg'), url('/images/pan-bg.svg');*/
     background-position: left center, right center;
     height: 165px;
     margin-top: 48px;
@@ -67,14 +67,14 @@ const Home: React.FC = () => {
     <Page>
       <Hero>
         <div>
-          <Title as="h1">{TranslateString(576, 'PandaYield')}</Title>
-          <Subtitle>{TranslateString(578, 'The most loved yield farm on Binance Smart Chain.')}</Subtitle>
+          <Title as="h1">{TranslateString(576, 'SpaceSwap')}</Title>
+          <Subtitle>{TranslateString(578, 'Galaxy experience in DeFi on Binance Smart Chain.')}</Subtitle>
         </div>
       </Hero>
       <Container>
         <Cards>
           <FarmStakingCard />
-          <LotteryCard />
+          {/* <LotteryCard /> */}
         </Cards>
         <CakeStats />
       </Container>
