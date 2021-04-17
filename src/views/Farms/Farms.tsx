@@ -60,9 +60,9 @@ const Farms: React.FC = () => {
   return (
     <Page>
       <Heading as="h1" size="lg" color="secondary" m="50px" style={{ textAlign: 'center' }}>
-        {TranslateString(999, 'Stake LP tokens to earn CAKE')}
+        {TranslateString(999, 'Stake LP tokens to earn SST')}
       </Heading>
-      <FarmTabButtons />
+      {/* <FarmTabButtons /> */}
       <Page>
         <Divider />
         <Route exact path={`${path}`}>

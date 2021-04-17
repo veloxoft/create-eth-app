@@ -2,15 +2,16 @@ import { PoolConfig, QuoteToken, PoolCategory } from './types'
 
 // 0xd4c13731a525b53064d38d84e85a4f8c58d791a3 is VSD on TESTNET
 // 97 is Testnet
+// 0xF5Fa2d9A884a756B457dd6A13f911cBEd4FA73E5 my syrop
 
 const pools: PoolConfig[] = [
   {
     sousId: 999,
     tokenName: 'SST',
     stakingTokenName: QuoteToken.SST,
-    stakingTokenAddress: '0xd4c13731a525b53064d38d84e85a4f8c58d791a3',
+    stakingTokenAddress: '0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82',
     contractAddress: {
-      97: '0xF5Fa2d9A884a756B457dd6A13f911cBEd4FA73E5',
+      97: '0xd3af5fe61dbaf8f73149bfcfa9fb653ff096029a',
       56: '0x73feaa1eE314F8c655E354234017bE2193C9E24E',
     },
     poolCategory: PoolCategory.CORE,

@@ -3,6 +3,21 @@ import { FarmConfig, QuoteToken } from './types'
 
 const farms: FarmConfig[] = [
   {
+    pid: 999,
+    lpSymbol: 'SST-BNB LP',
+    lpAddresses: {
+      97: '0xe70b7523f4bffa1f2e88d2ba709afd026030f412',
+      56: '0xA527a61703D82139F8a06Bc30097cC9CAA2df5A6',
+    },
+    tokenSymbol: 'SST SYRUP',
+    tokenAddresses: {
+      97: '0xe9e7cea3dedca5984780bafc599bd69add087d56',
+      56: '0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82',
+    },
+    quoteTokenSymbol: QuoteToken.SST,
+    quoteTokenAdresses: contracts.wbnb,
+  },
+  {
     pid: 0,
     lpSymbol: 'CAKE',
     lpAddresses: {
@@ -32,7 +47,7 @@ const farms: FarmConfig[] = [
     quoteTokenSymbol: QuoteToken.BNB,
     quoteTokenAdresses: contracts.wbnb,
   },
-  {
+  /* {
     pid: 57,
     lpSymbol: 'FRONT-BNB LP',
     lpAddresses: {
@@ -143,8 +158,8 @@ const farms: FarmConfig[] = [
     quoteTokenSymbol: QuoteToken.BNB,
     quoteTokenAdresses: contracts.wbnb,
     isCommunity: false,
-  },
-  {
+  }, */
+  /* {
     pid: 50,
     lpSymbol: 'TEN-BNB LP',
     lpAddresses: {
@@ -207,8 +222,8 @@ const farms: FarmConfig[] = [
     quoteTokenSymbol: QuoteToken.BNB,
     quoteTokenAdresses: contracts.wbnb,
     isCommunity: false,
-  },
-  {
+  }, */
+  /* {
     pid: 48,
     lpSymbol: 'ATM-BNB LP',
     lpAddresses: {
@@ -336,8 +351,8 @@ const farms: FarmConfig[] = [
     quoteTokenSymbol: QuoteToken.BNB,
     quoteTokenAdresses: contracts.wbnb,
     isCommunity: false,
-  },
-  {
+  }, */
+  /* {
     pid: 37,
     lpSymbol: 'HARD-BNB LP',
     lpAddresses: {
@@ -352,7 +367,7 @@ const farms: FarmConfig[] = [
     quoteTokenSymbol: QuoteToken.BNB,
     quoteTokenAdresses: contracts.wbnb,
     isCommunity: false,
-  },
+  }, */
   {
     pid: 2,
     lpSymbol: 'BUSD-BNB LP',
@@ -368,7 +383,7 @@ const farms: FarmConfig[] = [
     quoteTokenSymbol: QuoteToken.BNB,
     quoteTokenAdresses: contracts.wbnb,
   },
-  {
+  /* {
     pid: 3,
     lpSymbol: 'ADA-BNB LP',
     lpAddresses: {
@@ -382,8 +397,8 @@ const farms: FarmConfig[] = [
     },
     quoteTokenSymbol: QuoteToken.BNB,
     quoteTokenAdresses: contracts.wbnb,
-  },
-  {
+  }, */
+  /* {
     pid: 4,
     lpSymbol: 'BAND-BNB LP',
     lpAddresses: {
@@ -577,8 +592,8 @@ const farms: FarmConfig[] = [
     },
     quoteTokenSymbol: QuoteToken.BNB,
     quoteTokenAdresses: contracts.wbnb,
-  },
-  {
+  }, */
+  /* {
     pid: 20,
     lpSymbol: 'YFII-BNB LP',
     lpAddresses: {
@@ -727,8 +742,8 @@ const farms: FarmConfig[] = [
     },
     quoteTokenSymbol: QuoteToken.BNB,
     quoteTokenAdresses: contracts.wbnb,
-  },
-  {
+  }, */
+  /* {
     pid: 32,
     lpSymbol: 'CTK-BNB LP',
     lpAddresses: {
@@ -851,7 +866,7 @@ const farms: FarmConfig[] = [
     },
     quoteTokenSymbol: QuoteToken.BNB,
     quoteTokenAdresses: contracts.wbnb,
-  },
+  }, */
 ]
 
 export default farms

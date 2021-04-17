@@ -3,7 +3,7 @@ import { Tag, VerifiedIcon, CommunityIcon, BinanceIcon } from '@pancakeswap-libs
 
 const CoreTag = () => (
   <Tag variant="secondary" outline startIcon={<VerifiedIcon />}>
-    Core
+    Moon
   </Tag>
 )
 
