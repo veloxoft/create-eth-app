@@ -1,6 +1,26 @@
 import { PoolConfig, QuoteToken, PoolCategory } from './types'
 
+// 0xd4c13731a525b53064d38d84e85a4f8c58d791a3 is VSD on TESTNET
+// 97 is Testnet
+
 const pools: PoolConfig[] = [
+  {
+    sousId: 999,
+    tokenName: 'SST',
+    stakingTokenName: QuoteToken.SST,
+    stakingTokenAddress: '0xd4c13731a525b53064d38d84e85a4f8c58d791a3',
+    contractAddress: {
+      97: '0xF5Fa2d9A884a756B457dd6A13f911cBEd4FA73E5',
+      56: '0x73feaa1eE314F8c655E354234017bE2193C9E24E',
+    },
+    poolCategory: PoolCategory.CORE,
+    projectLink: 'spaceswap.netlify.app/',
+    harvest: true,
+    tokenPerBlock: '20',
+    sortOrder: 1,
+    isFinished: false,
+    tokenDecimals: 18,
+  },
   {
     sousId: 0,
     tokenName: 'CAKE',
@@ -18,7 +38,7 @@ const pools: PoolConfig[] = [
     isFinished: false,
     tokenDecimals: 18,
   },
-  {
+  /* {
     sousId: 37,
     tokenName: 'FRONT',
     stakingTokenName: QuoteToken.CAKE,
@@ -664,7 +684,7 @@ const pools: PoolConfig[] = [
     sortOrder: 999,
     isFinished: true,
     tokenDecimals: 18,
-  },
+  }, */
 ]
 
 export default pools

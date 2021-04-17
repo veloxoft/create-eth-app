@@ -25,6 +25,7 @@ const Farm: React.FC = () => {
   const pools = usePools(account)
   const bnbPriceUSD = usePriceBnbBusd()
   const block = useBlock()
+  console.log(pools)
 
   const priceToBnb = (tokenName: string, tokenPrice: BigNumber, quoteToken: QuoteToken): BigNumber => {
     const tokenPriceBN = new BigNumber(tokenPrice)
@@ -76,9 +77,9 @@ const Farm: React.FC = () => {
             <li>{TranslateString(406, 'Rewards are calculated per block.')}</li>
           </ul>
         </div>
-        <img src="/images/syrup.png" alt="INDEX POOL icon" />
+        <img src="/images/galaxy.png" alt="INDEX POOL icon" />
       </Hero>
-      <PoolTabButtons />
+      {/* <PoolTabButtons /> */}
       <Divider />
       <Pools>
         <Route exact path={`${path}`}>
@@ -86,7 +87,7 @@ const Farm: React.FC = () => {
             {orderBy(openPools, ['sortOrder']).map((pool) => (
               <PoolCard key={pool.sousId} pool={pool} />
             ))}
-            <Coming />
+            {/* <Coming /> */}
           </>
         </Route>
         <Route path={`${path}/history`}>
