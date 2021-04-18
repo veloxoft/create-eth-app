@@ -32,8 +32,9 @@ const Title = styled(Heading).attrs({ size: 'lg' })`
 const CakeStats = () => {
   const TranslateString = useI18n()
   const totalSupply = useTotalSupply()
-  const burnedBalance = useBurnedBalance(getCakeAddress())
-  const cakeSupply = totalSupply ? getBalanceNumber(totalSupply) - getBalanceNumber(burnedBalance) : 0
+  // const burnedBalance = useBurnedBalance(getCakeAddress())
+  // const cakeSupply = totalSupply ? getBalanceNumber(totalSupply) - getBalanceNumber(burnedBalance) : 0
+  const cakeSupply = totalSupply ? getBalanceNumber(totalSupply) : 0
 
   return (
     <StyledCakeStats>
@@ -43,10 +44,10 @@ const CakeStats = () => {
           <Text fontSize="14px">{TranslateString(536, 'Total SST Supply')}</Text>
           {cakeSupply && <CardValue fontSize="14px" value={cakeSupply} />}
         </Row>
-        <Row>
+        {/* <Row>
           <Text fontSize="14px">{TranslateString(538, 'Total SST Burned')}</Text>
           <CardValue fontSize="14px" value={getBalanceNumber(burnedBalance)} />
-        </Row>
+        </Row> */}
         <Row>
           <Text fontSize="14px">{TranslateString(540, 'New SST/block')}</Text>
           <CardValue fontSize="14px" decimals={0} value={25} />

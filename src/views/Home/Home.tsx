@@ -72,10 +72,11 @@ const Home: React.FC = () => {
         </div>
       </Hero>
       <Container>
-        <Cards>
+          <div style={{ "marginBottom":"48px" }}>
           <FarmStakingCard />
+          </div>
           {/* <LotteryCard /> */}
-        </Cards>
+        
         <CakeStats />
       </Container>
     </Page>

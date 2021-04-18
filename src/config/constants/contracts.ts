@@ -1,6 +1,6 @@
 export default {
-  sst: {
-    97: '0x43acC9A5E94905c7D31415EB410F3E666e5F1e9A',
+  sstd: {
+    97: '0x10cb09Ff6207fe3526c94e6a4320679d9A1C2154',
     56: '0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82',
   },
   cake: {

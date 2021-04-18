@@ -69,9 +69,9 @@ const FarmedStakingCard = () => {
 
   return (
     <StyledFarmStakingCard>
-      <CardBody>
+      <CardBody style={{ "textAlign":"center" }}>
         <CardTitle>{TranslateString(542, 'Farms & Staking')}</CardTitle>
-        <CardImage src="/images/space2.svg" alt="spaceswap logo" />
+        <CardImage src="/images/planet.png" alt="spaceswap logo" style={{ "width":"50%"}}/>
         <Block>
           <Value>
             <CakeHarvestBalance />
