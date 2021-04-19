@@ -2,7 +2,7 @@ import contracts from './contracts'
 import { FarmConfig, QuoteToken } from './types'
 
 const farms: FarmConfig[] = [
-  {
+ /*  {
     pid: 999,
     lpSymbol: 'SST-BNB LP',
     lpAddresses: {
@@ -16,7 +16,7 @@ const farms: FarmConfig[] = [
     },
     quoteTokenSymbol: QuoteToken.SST,
     quoteTokenAdresses: contracts.wbnb,
-  },
+  }, */
   {
     pid: 0,
     lpSymbol: 'CAKE',

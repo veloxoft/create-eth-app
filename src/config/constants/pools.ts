@@ -5,7 +5,7 @@ import { PoolConfig, QuoteToken, PoolCategory } from './types'
 // 0xF5Fa2d9A884a756B457dd6A13f911cBEd4FA73E5 my syrop
 
 const pools: PoolConfig[] = [
-  {
+  /* {
     sousId: 999,
     tokenName: 'SST',
     stakingTokenName: QuoteToken.SST,
@@ -21,7 +21,7 @@ const pools: PoolConfig[] = [
     sortOrder: 1,
     isFinished: false,
     tokenDecimals: 18,
-  },
+  }, */
   {
     sousId: 0,
     tokenName: 'CAKE',
