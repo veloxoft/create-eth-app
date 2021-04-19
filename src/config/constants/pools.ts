@@ -5,8 +5,8 @@ import { PoolConfig, QuoteToken, PoolCategory } from './types'
 // 0xF5Fa2d9A884a756B457dd6A13f911cBEd4FA73E5 my syrop
 
 const pools: PoolConfig[] = [
-  {
-    sousId: 0,
+  /* {
+    sousId: 999,
     tokenName: 'SST',
     stakingTokenName: QuoteToken.SST,
     stakingTokenAddress: '0x10cb09ff6207fe3526c94e6a4320679d9a1c2154',
@@ -21,11 +21,28 @@ const pools: PoolConfig[] = [
     sortOrder: 1,
     isFinished: false,
     tokenDecimals: 18,
-  },
+  }, */
   /* {
+    sousId: 37,
+    tokenName: 'SST',
+    stakingTokenName: QuoteToken.SST,
+    stakingTokenAddress: '0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82',
+    contractAddress: {
+      97: '',
+      56: '0xf7a31366732F08E8e6B88519dC3E827e04616Fc9',
+    },
+    poolCategory: PoolCategory.CORE,
+    projectLink: 'http://pancakeswap.finance/',
+    harvest: true,
+    tokenPerBlock: '10',
+    sortOrder: 1,
+    isFinished: false,
+    tokenDecimals: 18,
+  }, */
+  {
     sousId: 0,
-    tokenName: 'CAKE',
-    stakingTokenName: QuoteToken.CAKE,
+    tokenName: 'SST',
+    stakingTokenName: QuoteToken.SST,
     stakingTokenAddress: '0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82',
     contractAddress: {
       97: '0xd3af5fe61dbaf8f73149bfcfa9fb653ff096029a',
@@ -38,7 +55,7 @@ const pools: PoolConfig[] = [
     sortOrder: 1,
     isFinished: false,
     tokenDecimals: 18,
-  }, */
+  },
   /* {
     sousId: 37,
     tokenName: 'FRONT',

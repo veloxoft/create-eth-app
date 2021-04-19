@@ -12,11 +12,11 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'Exchange',
-        href: 'https://spaceswap-dex.netlify.app',
+        href: 'http://localhost:3001/#/swap',
       },
       {
         label: 'Liquidity',
-        href: 'https://spaceswap-dex.netlify.app/#/pool',
+        href: 'http://localhost:3001/#/pool',
       },
     ],
   },

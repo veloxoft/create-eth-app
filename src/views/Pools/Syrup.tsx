@@ -66,7 +66,7 @@ const Farm: React.FC = () => {
 
   return (
     <Page>
-      {/* <Hero>
+      <Hero>
         <div>
           <Heading as="h1" size="xxl" mb="16px">
             {TranslateString(282, 'SpaceSwap Index Pool')}
@@ -78,24 +78,24 @@ const Farm: React.FC = () => {
           </ul>
         </div>
         <img src="/images/galaxy.png" alt="INDEX POOL icon" />
-      </Hero> */}
+      </Hero>
       {/* <PoolTabButtons /> */}
-      {/* <Divider />
+      <Divider />
       <Pools>
         <Route exact path={`${path}`}>
           <>
             {orderBy(openPools, ['sortOrder']).map((pool) => (
               <PoolCard key={pool.sousId} pool={pool} />
             ))}
-            <Coming />
+            {/* <Coming /> */}
           </>
         </Route>
-        <Route path={`${path}/history`}>
+        {/* <Route path={`${path}/history`}>
           {orderBy(finishedPools, ['sortOrder']).map((pool) => (
             <PoolCard key={pool.sousId} pool={pool} />
           ))}
-        </Route>
-      </Pools> */}
+        </Route> */}
+      </Pools>
     </Page>
   )
 }

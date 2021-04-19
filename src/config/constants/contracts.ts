@@ -7,22 +7,22 @@ export default {
     97: '0x43acC9A5E94905c7D31415EB410F3E666e5F1e9A',
     56: '0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82',
   },
-  syrup: {
+  /* syrup: {
     97: '0xa25f633b8AF835481fb8dC85A3aD2766F8a8357C',
     56: '',
-  },
-  /* syrup: {
+  }, */
+  syrup: {
     97: '0xfE1e507CeB712BDe086f3579d2c03248b2dB77f9',
     56: '0x009cF7bC57584b7998236eff51b98A168DceA9B0',
-  }, */
-  masterChef: {
-    97: '0x8018313A609ccC9E8Aff5Dddf8B4C99e19577093',
-    56: '',
   },
   /* masterChef: {
+    97: '0x8018313A609ccC9E8Aff5Dddf8B4C99e19577093',
+    56: '',
+  }, */
+  masterChef: {
     97: '0x1d32c2945C8FDCBc7156c553B7cEa4325a17f4f9',
     56: '0x73feaa1eE314F8c655E354234017bE2193C9E24E',
-  }, */
+  },
   sousChef: {
     97: '0xd3af5fe61dbaf8f73149bfcfa9fb653ff096029a',
     56: '0x6ab8463a4185b80905e05a9ff80a2d6b714b9e95',

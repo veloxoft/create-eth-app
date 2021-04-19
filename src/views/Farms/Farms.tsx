@@ -63,7 +63,7 @@ const Farms: React.FC = () => {
         {TranslateString(999, 'Stake LP tokens to earn SST')}
       </Heading>
       {/* <FarmTabButtons /> */}
-      {/* <Page>
+      <Page>
         <Divider />
         <Route exact path={`${path}`}>
           <Grid>{farmsList(activeFarms, false)}</Grid>
@@ -71,7 +71,7 @@ const Farms: React.FC = () => {
         <Route exact path={`${path}/history`}>
           <Grid>{farmsList(inactiveFarms, true)}</Grid>
         </Route>
-      </Page> */}
+      </Page>
       <Image src="/images/cakecat.png" alt="Pancake illustration" width={949} height={384} responsive />
     </Page>
   )
