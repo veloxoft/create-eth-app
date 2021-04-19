@@ -6,12 +6,12 @@ import { PoolConfig, QuoteToken, PoolCategory } from './types'
 
 const pools: PoolConfig[] = [
   {
-    sousId: 999,
+    sousId: 0,
     tokenName: 'SST',
     stakingTokenName: QuoteToken.SST,
-    stakingTokenAddress: '0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82',
+    stakingTokenAddress: '0x10cb09ff6207fe3526c94e6a4320679d9a1c2154',
     contractAddress: {
-      97: '0xd3af5fe61dbaf8f73149bfcfa9fb653ff096029a',
+      97: '',
       56: '0x73feaa1eE314F8c655E354234017bE2193C9E24E',
     },
     poolCategory: PoolCategory.CORE,
@@ -22,7 +22,7 @@ const pools: PoolConfig[] = [
     isFinished: false,
     tokenDecimals: 18,
   },
-  {
+  /* {
     sousId: 0,
     tokenName: 'CAKE',
     stakingTokenName: QuoteToken.CAKE,
@@ -38,7 +38,7 @@ const pools: PoolConfig[] = [
     sortOrder: 1,
     isFinished: false,
     tokenDecimals: 18,
-  },
+  }, */
   /* {
     sousId: 37,
     tokenName: 'FRONT',

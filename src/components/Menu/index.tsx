@@ -11,7 +11,9 @@ const Menu = (props) => {
   const { account, connect, reset } = useWallet()
   const { selectedLanguage, setSelectedLanguage } = useContext(LanguageContext)
   const { isDark, toggleTheme } = useTheme()
-  const cakePriceUsd = usePriceCakeBusd()
+  // const cakePriceUsd = usePriceCakeBusd()
+
+  // console.log('cakePriceUsd: ', cakePriceUsd)
 
   return (
     <UikitMenu
@@ -23,7 +25,8 @@ const Menu = (props) => {
       currentLang={selectedLanguage && selectedLanguage.code}
       langs={allLanguages}
       setLang={setSelectedLanguage}
-      cakePriceUsd={cakePriceUsd.toNumber()}
+      // cakePriceUsd={cakePriceUsd.toNumber()}
+      cakePriceUsd={0}
       links={config}
       {...props}
     />

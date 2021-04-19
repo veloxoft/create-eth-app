@@ -183,7 +183,8 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed }) => {
       {!removed && (
         <Label>
           <span>{TranslateString(23, 'Total Liquidity')}</span>
-          <span className="right">{totalValueFormated}</span>
+          {/* <span className="right">{totalValueFormated}</span> */}
+          <span className="right">0</span>
         </Label>
       )}
       <ViewMore>

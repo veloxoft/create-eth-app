@@ -43,9 +43,9 @@ const App: React.FC = () => {
           <Route path="/farms">
             <Farms />
           </Route>
-          <Route path="/farm/:lpSymbol">
+          {/* <Route path="/farm/:lpSymbol">
             <Farm />
-          </Route>
+          </Route> */}
           <Route path="/pools">
             <Pools />
           </Route>
@@ -59,17 +59,17 @@ const App: React.FC = () => {
             <Nft />
           </Route> */}
           {/* Redirect */}
-          <Route path="/staking">
+          {/* <Route path="/staking">
             <Redirect to="/pools" />
-          </Route>
-          <Route path="/syrup">
+          </Route> */}
+          {/* <Route path="/syrup">
             <Redirect to="/pools" />
-          </Route>
+          </Route> */}
           {/* 404 */}
           <Route component={NotFound} />
         </Switch>
       </Menu>
-      <NftGlobalNotification />
+      {/* <NftGlobalNotification /> */}
     </Router>
   )
 }

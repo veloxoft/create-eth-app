@@ -52,11 +52,11 @@ const FarmedStakingCard = () => {
   const { account } = useWallet()
   const TranslateString = useI18n()
   const farmsWithBalance = useFarmsWithBalance()
-  const balancesWithValue = farmsWithBalance.filter((balanceType) => balanceType.balance.toNumber() > 0)
+  // const balancesWithValue = farmsWithBalance.filter((balanceType) => balanceType.balance.toNumber() > 0)
 
-  const { onReward } = useAllHarvest(balancesWithValue.map((farmWithBalance) => farmWithBalance.pid))
+  // const { onReward } = useAllHarvest(balancesWithValue.map((farmWithBalance) => farmWithBalance.pid))
 
-  const harvestAllFarms = useCallback(async () => {
+  /* const harvestAllFarms = useCallback(async () => {
     setPendingTx(true)
     try {
       await onReward()
@@ -65,7 +65,7 @@ const FarmedStakingCard = () => {
     } finally {
       setPendingTx(false)
     }
-  }, [onReward])
+  }, [onReward]) */
 
   return (
     <StyledFarmStakingCard>
@@ -88,13 +88,17 @@ const FarmedStakingCard = () => {
           {account ? (
             <Button
               id="harvest-all"
-              disabled={balancesWithValue.length <= 0 || pendingTx}
-              onClick={harvestAllFarms}
+              // disabled={balancesWithValue.length <= 0 || pendingTx}
+              disabled
+              // onClick={harvestAllFarms}
               fullWidth
             >
-              {pendingTx
+              {/* {pendingTx
                 ? TranslateString(548, 'Collecting SST')
-                : TranslateString(999, `Harvest all (${balancesWithValue.length})`)}
+                : TranslateString(999, `Harvest all (${balancesWithValue.length})`)} */}
+                {pendingTx
+                ? TranslateString(548, 'Collecting SST')
+                : TranslateString(999, `Harvest all (0)`)}
             </Button>
           ) : (
             <UnlockButton fullWidth />

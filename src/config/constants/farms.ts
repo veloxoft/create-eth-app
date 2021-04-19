@@ -1,23 +1,32 @@
 import contracts from './contracts'
 import { FarmConfig, QuoteToken } from './types'
 
+// 97 Testnet
+// 56 Mainnet
+
+// 0x10cb09ff6207fe3526c94e6a4320679d9a1c2154 - SSTDemo Testnet
+// 0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82 - CAKE Mainnet
+// wbnb is ok
+// 0xA527a61703D82139F8a06Bc30097cC9CAA2df5A6 - Pancake LPs (Cake-LP) Mainnet
+// 0xe70b7523f4bffa1f2e88d2ba709afd026030f412 - TEST-LP3 (LP3) - Testnet
+
 const farms: FarmConfig[] = [
   {
-    pid: 999,
+    pid: 1,
     lpSymbol: 'SST-BNB LP',
     lpAddresses: {
       97: '0xe70b7523f4bffa1f2e88d2ba709afd026030f412',
       56: '0xA527a61703D82139F8a06Bc30097cC9CAA2df5A6',
     },
-    tokenSymbol: 'SST SYRUP',
+    tokenSymbol: 'SST',
     tokenAddresses: {
-      97: '0xe9e7cea3dedca5984780bafc599bd69add087d56',
-      56: '0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82',
+      97: '0x10cb09ff6207fe3526c94e6a4320679d9a1c2154',
+      56: '',
     },
     quoteTokenSymbol: QuoteToken.SST,
     quoteTokenAdresses: contracts.wbnb,
   },
-  {
+  /* {
     pid: 0,
     lpSymbol: 'CAKE',
     lpAddresses: {
@@ -31,8 +40,8 @@ const farms: FarmConfig[] = [
     },
     quoteTokenSymbol: QuoteToken.BNB,
     quoteTokenAdresses: contracts.wbnb,
-  },
-  {
+  }, */
+  /* {
     pid: 1,
     lpSymbol: 'CAKE-BNB LP',
     lpAddresses: {
@@ -46,7 +55,7 @@ const farms: FarmConfig[] = [
     },
     quoteTokenSymbol: QuoteToken.BNB,
     quoteTokenAdresses: contracts.wbnb,
-  },
+  }, */
   /* {
     pid: 57,
     lpSymbol: 'FRONT-BNB LP',
@@ -377,7 +386,7 @@ const farms: FarmConfig[] = [
     },
     tokenSymbol: 'BUSD',
     tokenAddresses: {
-      97: '0xe9e7cea3dedca5984780bafc599bd69add087d56',
+      97: '0x8301F2213c0eeD49a7E28Ae4c3e91722919B8B47',
       56: '0xe9e7cea3dedca5984780bafc599bd69add087d56',
     },
     quoteTokenSymbol: QuoteToken.BNB,

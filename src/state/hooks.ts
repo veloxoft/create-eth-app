@@ -88,6 +88,7 @@ export const usePriceBnbBusd = (): BigNumber => {
 export const usePriceCakeBusd = (): BigNumber => {
   const pid = 1 // CAKE-BNB LP
   const bnbPriceUSD = usePriceBnbBusd()
+  // console.log('bnbPriceUSD: ', bnbPriceUSD)
   const farm = useFarmFromPid(pid)
   return farm.tokenPriceVsQuote ? bnbPriceUSD.times(farm.tokenPriceVsQuote) : ZERO
 }
